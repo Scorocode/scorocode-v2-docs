@@ -616,18 +616,18 @@
 <h2 id="_3">Создание приложения</h2>
 <p>Создайте приложение в личном кабинете, нажав на кнопку "+ Добавить", перейдите в меню приложения, нажав на его имя в списке.</p>
 <p>Обратите внимание на структуру ссылки на приложение, она выглядит следующим образом:</p>
-<p><strong>https://accounts.{домен}/p/app/{идентификатор_приложения}</strong></p>
+<p><strong>https://account.{домен}/p/app/{идентификатор_приложения}</strong></p>
 <h2 id="sc-cli">Скачивание sc-cli</h2>
 <p>Для того чтобы локально разрабатывать приложение, вам понадобится утилита для консоли <code>sc-cli</code>. </p>
 <p>sc-cli - утилита предоставляющая интерфейс командной строки для работы с приложениями
 созданными в Scorocode.</p>
-<p>Скачайте и установите ее (у нас есть инсталляторы под <a href="https://accounts.scorocode.ru/downloads/sc-cli-1.0.0.pkg">Mac</a>, <a href="https://accounts.scorocode.ru/downloads/sc-cli-1.0.0.deb">Debian</a>, <a href="https://accounts.scorocode.ru/downloads/sc-cli-1.0.0-x86.msi">Windows</a>)</p>
+<p>Скачайте и установите ее (у нас есть инсталляторы под <a href="https://account.scorocode.ru/downloads/sc-cli-1.0.0.pkg">Mac</a>, <a href="https://account.scorocode.ru/downloads/sc-cli-1.0.0.deb">Debian</a>, <a href="https://account..scorocode.ru/downloads/sc-cli-1.0.0-x86.msi">Windows</a>)</p>
 <h2 id="sc-cli_1">Как использовать sc-cli</h2>
 <p>Для того чтобы пользоваться sc-cli, вам потребуются начальные знания о работе в командной строке.</p>
 <p>Откройте консоль, наберите:</p>
 <p><code>sc-cli fetch -dir путь к каталогу приложения -domain домен -id идентификатор приложения</code></p>
 <blockquote>
-<p>потому что структура ссылки https://accounts.{домен}/p/app/{идентификатор_приложения}</p>
+<p>потому что структура ссылки https://account.{домен}/p/app/{идентификатор_приложения}</p>
 </blockquote>
 <p>Ура! Вы создали каталог приложения, в этом каталоге появилась папка 'project' и скрытая папка .cli/config, в которой содержатся логи.</p>
 <p>Свяжем локальные порты на вашем компьютере с облачными сервисами:</p>
