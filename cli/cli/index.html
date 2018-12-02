@@ -617,14 +617,14 @@
 </blockquote>
 <h2 id="sc-cli-init">sc-cli init</h2>
 <p>Создание шаблона приложения </p>
+<p><strong>Внимание! Команда <code>init</code> перезаписывает файлы в облаке Scorocode, убедитесь, что у вас есть копия вашего предыдущего проекта</strong></p>
 <pre><code>sc-cli init
 </code></pre>
 
-<blockquote>
-<p>ВАЖНО! команда <code>init</code> перезаписывает файлы в облаке Scorocode, убедитесь, что у вас есть копия вашего предыдущего проекта</p>
-</blockquote>
+<hr />
 <h2 id="sc-cli-pull">sc-cli pull</h2>
 <p>Скачивание файлов приложения в локальную папку (если директория не указана, файлы будут загружены в текущую папку).</p>
+<p><strong>ВНИМАНИЕ! Данная команда перезаписывает файлы в каталоге 'project'</strong></p>
 <pre><code>sc-cli pull -dir DIR 
 </code></pre>
 
@@ -633,6 +633,7 @@
 </blockquote>
 <h2 id="sc-cli-push">sc-cli-push</h2>
 <p>Загрузка файлов приложения из локальной папки в приложение scorocode </p>
+<p><strong>ВНИМАНИЕ! Данная команда перезаписывает файлы в облаке Scorocode</strong></p>
 <pre><code>sc-cli push -dir DIR 
 </code></pre>
 
