@@ -389,13 +389,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sc-cli-dep" title="sc-cli dep" class="md-nav__link">
-    sc-cli dep
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#sc-cli-env" title="sc-cli env" class="md-nav__link">
     sc-cli env
   </a>
@@ -557,13 +550,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sc-cli-dep" title="sc-cli dep" class="md-nav__link">
-    sc-cli dep
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#sc-cli-env" title="sc-cli env" class="md-nav__link">
     sc-cli env
   </a>
@@ -632,7 +618,7 @@
 <p>DIR - путь к каталогу проекта</p>
 </blockquote>
 <h2 id="sc-cli-push">sc-cli-push</h2>
-<p>Загрузка файлов приложения из локальной папки в приложение scorocode </p>
+<p>Загрузка файлов приложения из локальной папки в приложение scorocode и обновление зависимостей node.js. Для работы команды необходимо <a href="https://docs.docker.com/install/#supported-platforms">установить Docker</a></p>
 <p><strong>ВНИМАНИЕ! Данная команда перезаписывает файлы в облаке Scorocode</strong></p>
 <pre><code>sc-cli push -dir DIR 
 </code></pre>
@@ -670,14 +656,6 @@
 <p>DBNAME — Имя базы данных</p>
 <p>PASS — пароль администратора БД (по умолчанию 123456)</p>
 <p>USR — администратор БД (по умолчанию postgres)</p>
-</blockquote>
-<h2 id="sc-cli-dep">sc-cli dep</h2>
-<p>Обновление зависимостей node.js</p>
-<pre><code>sc-cli dep -dir DIR 
-</code></pre>
-
-<blockquote>
-<p>DIR - путь к каталогу проекта</p>
 </blockquote>
 <h2 id="sc-cli-env">sc-cli env</h2>
 <p>Вывод списка переменных окружения</p>
