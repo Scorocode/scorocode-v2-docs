@@ -309,18 +309,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Руководство пользователя Scorocode V2" class="md-nav__link">
-      Руководство пользователя Scorocode V2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../first/" title="Быстрый старт" class="md-nav__link">
       Быстрый старт
     </a>
@@ -572,10 +560,10 @@
 <h2 id="scorocode_2">Создание приложения в кабинете Scorocode</h2>
 <p>Создайте приложение в личном кабинете, нажав на кнопку "+ Добавить", перейдите в меню приложения, нажав на его имя в списке.</p>
 <p>Обратите внимание на структуру ссылки на приложение, она выглядит следующим образом:</p>
-<p><strong>https://account.{домен}/p/app/{идентификатор_приложения}</strong></p>
+<p><strong>https://account.v2.{домен}/p/app/{идентификатор_приложения}</strong></p>
 <h2 id="sc-cli">Установка sc-cli</h2>
 <p>Для того чтобы локально разрабатывать приложение, вам понадобится утилита для консоли <code>sc-cli</code>. </p>
-<p>sc-cli - утилита предоставляющая интерфейс командной строки для работы с приложениями
+<p>sc-cli - утилита, предоставляющая интерфейс командной строки для работы с приложениями,
 созданными в Scorocode.</p>
 <p>Скачайте и установите ее (у нас есть инсталляторы под <a href="https://account.v2.scorocode.ru/downloads/sc-cli-1.0.0.pkg">Mac</a>, <a href="https://account.v2.scorocode.ru/downloads/sc-cli-1.0.0.deb">Debian</a>, <a href="https://account.v2.scorocode.ru/downloads/sc-cli-1.0.0-x86.msi">Windows</a>)</p>
 <h2 id="_1">Инициализация приложения</h2>
@@ -583,7 +571,7 @@
 <p>Откройте консоль, наберите:</p>
 <p><code>sc-cli fetch -dir путь к каталогу приложения -domain домен -id идентификатор приложения</code></p>
 <blockquote>
-<p>потому что структура ссылки https://account.{домен}/p/app/{идентификатор_приложения}</p>
+<p>потому что структура ссылки https://account.v2.{домен}/p/app/{идентификатор_приложения}</p>
 </blockquote>
 <p>Ура! Вы создали каталог приложения, в этом каталоге появилась папка 'project' и скрытая папка .cli/config, в которой содержатся логи.</p>
 <h2 id="_2">Создание шаблона приложения</h2>
@@ -602,10 +590,10 @@
 </blockquote>
 <p>Скачайте программу-интерфейс для работы с СУБД </p>
 <blockquote>
-<p>например, pgAdmin или любую другую, поддерживающую работу с postgres</p>
+<p>например, pgAdmin или любую другую, поддерживающую работу с postgres, также можно настроить БД из консоли, если вы это умеете</p>
 </blockquote>
 <p>В программе-интерфейсе создайте базу данных с именем, которое вы указали в параметре <code>-name regdb</code>. </p>
-<p>Через несколько мгновений база данных будет видна в web-интерфейсе Scorocode на вкладке "База данных" вашего приложения.</p>
+<p>Через несколько секунд база данных будет видна в web-интерфейсе Scorocode на вкладке "База данных" вашего приложения.</p>
 <h2 id="_5">Тестирование и отладка приложения</h2>
 <p>Вы можете локально разрабатывать приложение и при этом тестировать его работу на сервере с помощью команды <code>serve</code></p>
 <p><code>sc-cli serve перечень команд, которые вы хотите запустить</code></p>
@@ -648,13 +636,13 @@
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="../.." title="Руководство пользователя Scorocode V2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../first/" title="Быстрый старт" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Руководство пользователя Scorocode V2
+                Быстрый старт
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
