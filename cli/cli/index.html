@@ -231,6 +231,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getstart/dock/" title="Добавление микросервисов" class="md-nav__link">
+      Добавление микросервисов
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -309,6 +321,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sc-cli-login" title="sc-cli login" class="md-nav__link">
+    sc-cli login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sc-cli-fetch" title="sc-cli fetch" class="md-nav__link">
     sc-cli fetch
   </a>
@@ -337,8 +356,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sc-cli-push" title="sc-cli-push" class="md-nav__link">
-    sc-cli-push
+  <a href="#sc-cli-push" title="sc-cli push" class="md-nav__link">
+    sc-cli push
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sc-cli-release" title="sc-cli release" class="md-nav__link">
+    sc-cli release
   </a>
   
 </li>
@@ -470,6 +496,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sc-cli-login" title="sc-cli login" class="md-nav__link">
+    sc-cli login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sc-cli-fetch" title="sc-cli fetch" class="md-nav__link">
     sc-cli fetch
   </a>
@@ -498,8 +531,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sc-cli-push" title="sc-cli-push" class="md-nav__link">
-    sc-cli-push
+  <a href="#sc-cli-push" title="sc-cli push" class="md-nav__link">
+    sc-cli push
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sc-cli-release" title="sc-cli release" class="md-nav__link">
+    sc-cli release
   </a>
   
 </li>
@@ -559,6 +599,11 @@
                 <h1 id="sc-cli">Описание команд sc-cli</h1>
 <h2 id="sc-cli_1">Авторизация sc-cli</h2>
 <p>При первом запуске <code>sc-cli</code> потребуется ввести почту и пароль от вашего кабинета Scorocode. Если действия с <code>sc-cli</code> не будут проводиться в течение 15 минут, то потребуется ввести почту и пароль повторно.</p>
+<h2 id="sc-cli-login">sc-cli login</h2>
+<p>Повторный логин в sc-cli </p>
+<pre><code>sc-cli login
+</code></pre>
+
 <h2 id="sc-cli-fetch">sc-cli fetch</h2>
 <p>Инициализация проекта приложения в выбранном каталоге</p>
 <pre><code>sc-cli fetch -dir DIR -domain DOMAIN -id ID
@@ -587,20 +632,32 @@
 <h2 id="sc-cli-pull">sc-cli pull</h2>
 <p>Скачивание файлов приложения в локальную папку (если директория не указана, файлы будут загружены в текущую папку).</p>
 <p><strong>ВНИМАНИЕ! Данная команда перезаписывает файлы в каталоге 'project'</strong></p>
-<pre><code>sc-cli pull -dir DIR 
+<pre><code>sc-cli pull -dir DIR -release NAME
 </code></pre>
 
 <blockquote>
 <p>DIR - путь к каталогу проекта</p>
+<p>NAME - выбор версии приложения на сервере</p>
 </blockquote>
-<h2 id="sc-cli-push">sc-cli-push</h2>
+<h2 id="sc-cli-push">sc-cli push</h2>
 <p>Загрузка файлов приложения из локальной папки в приложение scorocode и обновление зависимостей node.js. Для работы команды необходимо <a href="https://docs.docker.com/install/#supported-platforms">установить Docker</a></p>
 <p><strong>ВНИМАНИЕ! Данная команда перезаписывает файлы в облаке Scorocode</strong></p>
-<pre><code>sc-cli push -dir DIR 
+<pre><code>sc-cli push -dir DIR -release NAME
 </code></pre>
 
 <blockquote>
 <p>DIR - путь к каталогу проекта</p>
+<p>NAME - имя, под которым данная версия приложения будет отображаться на сервере (если оставить параметр пустым, будут использованы текущие дата и время)</p>
+</blockquote>
+<h2 id="sc-cli-release">sc-cli release</h2>
+<p>Позволяет переключаться между версиями приложения. </p>
+<pre><code>sc-cli release -list -use -delete
+</code></pre>
+
+<blockquote>
+<p>LIST - выводит список версий</p>
+<p>USE - делает активной выбранную версию</p>
+<p>DELETE - удаляет выбранную версию</p>
 </blockquote>
 <h2 id="sc-cli-logs">sc-cli logs</h2>
 <p>Вывод логов — вывод записей о событиях в приложении из журнала в хронологическом порядке.</p>
